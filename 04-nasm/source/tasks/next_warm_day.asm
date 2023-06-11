@@ -1,9 +1,9 @@
 %include'./lib/library.asm'
 
 section .data
-    arr dd  17, 21, 13, 17, 14, 12
-    n   dd  6
-    res dd -1, -1, -1, -1, -1, -1
+    arr dd  3, 2, 1, 5, 4
+    n   dd  5
+    res dd -1, -1, -1, -1, -1
 
 section .text
 global _start
@@ -17,6 +17,8 @@ start_iter:
     mov edx, [ebx]
     cmp edx, [ebx-4]
     jl set_new_res
+    cmp edx, eax
+    jg next_iter
     cmp eax, 0
     jne set_res
 
