@@ -9,7 +9,7 @@
 int get_random_number() {
 	// Use current time as seed for random generator
 	srand(time(NULL)); // NOLINT(cert-msc51-cpp)
-	return rand() % 1000; // NOLINT(cert-msc50-cpp)
+	return rand() % 1000 + 1; // NOLINT(cert-msc50-cpp)
 }
 
 int get_input_number(bool *isLoop) { // NOLINT(misc-no-recursion)
