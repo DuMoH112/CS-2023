@@ -1,0 +1,6 @@
+<digit>  		::= "0" | "1"
+<number> 		::= <digit> | <number> <digit>
+
+<open_bracket> 	::= "("
+<close_bracket> ::= ")"
+<chain_bracket> ::= <open_bracket> <close_bracket> | <open_bracket> <chain_bracket> <close_bracket> | <chain_bracket> <chain_bracket>
