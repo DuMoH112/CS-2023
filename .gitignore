@@ -2,3 +2,5 @@
 .vscode
 .DS_Store
 cmake-build-debug
+main.dSYM
+main
