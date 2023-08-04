@@ -1,0 +1,3 @@
+<LB> ::= "("
+<RB> ::= ")"
+<chain_bracket> ::= <LB> <RB> | <LB> <chain_bracket> <RB> | <chain_bracket> <chain_bracket>
